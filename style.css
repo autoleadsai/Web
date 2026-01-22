@@ -1,0 +1,96 @@
+:root {
+  --bg: #1E1E2F;
+  --header: #282042;
+  --card: #3A3D5B;
+  --text: #EAEAEA;
+  --accent: #FFD788;
+  --hover: #FFD700;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--header);
+  padding: 20px;
+  text-align: center;
+}
+
+.grid {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tool-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(255,215,0,0.2);
+}
+
+.tool-card:hover {
+  background: var(--hover);
+  color: #1E1E2F;
+}
+
+.tool-card button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.tool-card button:hover {
+  background: #E6C200;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background: var(--card);
+  padding: 20px;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}
