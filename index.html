@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi Tool Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Multi Tool Hub</h1>
+</header>
+
+<main class="grid">
+  <!-- Tool Cards -->
+  <div class="tool-card" onclick="openTool('age')">
+    <h2>Age Calculator</h2>
+    <p>Calculate age in years, months & days</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('emi')">
+    <h2>EMI Calculator</h2>
+    <p>Calculate loan EMI & interest</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('sip')">
+    <h2>SIP Calculator</h2>
+    <p>Calculate future investment value</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('password')">
+    <h2>Password Generator</h2>
+    <p>Create strong secure passwords</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('word')">
+    <h2>Word Counter</h2>
+    <p>Count words, characters & time</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('qr')">
+    <h2>QR Code Generator</h2>
+    <p>Generate QR from text or URL</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('bmi')">
+    <h2>BMI Calculator</h2>
+    <p>Check BMI and health category</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('base64')">
+    <h2>Base64 Tool</h2>
+    <p>Encode or decode Base64 text</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('tts')">
+    <h2>Text to Speech</h2>
+    <p>Convert text into voice</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('stt')">
+    <h2>Speech to Text</h2>
+    <p>Convert voice to text</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('json')">
+    <h2>JSON Formatter</h2>
+    <p>Validate & format JSON</p>
+    <button>Open Tool</button>
+  </div>
+
+  <div class="tool-card" onclick="openTool('timer')">
+    <h2>Timer / Stopwatch</h2>
+    <p>Track time easily</p>
+    <button>Open Tool</button>
+  </div>
+</main>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeTool()">×</span>
+    <div id="toolContent"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
